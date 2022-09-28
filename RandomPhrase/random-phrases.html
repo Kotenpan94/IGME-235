@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Kingdom Hearts Random Phrases</title>
+</head>
+
+<body>
+    <!-- Header for the page -->
+    <!-- Kingdom Heart's story is a mess, so figured it be perfect for a random themed website loll -->
+    <div id="wrapper">
+        <header>
+            Kingdom Hearts Random Phrases
+        </header>
+
+        <div id="container">
+            <div id="image">
+                <img src="media/poohdies.jpg" alt="kingdomheartsrandomimage">
+            </div>
+            <div id="random-text">
+
+            </div>
+
+        </div>
+        <div id="button-container">
+            <button id="randomButton" type="button">Generate Random Phrase</button>
+        </div>
+
+    </div>
+    <!-- Javascript starts here -->
+    <script>
+
+        //Getting each element on the page that is needed and creating my random phrases array.
+        // let randomNum = Math.floor(4*Math.random())
+
+        let quotes = ["Your light? Never lose sight of it.", "All for one and one for all!", "That’s not true! The heart may be weak. And sometimes it may even give in", "Gwarsh your majesty, I get bumped on the head all the time!", "Darkness is half of everything. Sorta makes ya wonder why we are scared of the dark."]
+        let randomText = document.querySelector("#random-text");
+        let button = document.querySelector("#randomButton");
+
+        // Display Quote function
+        function displayQuote() {
+            let randomNum = Math.floor(4 * Math.random())
+
+            randomText.innerHTML = quotes[randomNum];
+        }
+        button.addEventListener("click", displayQuote)
+
+    </script>
+
+
+</body>
+
+
+
+</html>

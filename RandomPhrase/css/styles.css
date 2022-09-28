@@ -1,0 +1,93 @@
+/* Universal rules */
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'crimsontext';
+    src: url(../fonts/CrimsonText-Regular.ttf);
+}
+/* Creating a grid and its areas */
+#wrapper{
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header"
+                         "photo"
+                         "button";
+    grid-template-rows: 10% 70% 10% 10%;
+}
+/* Assigning grid areas */
+header{
+    grid-area: header;
+    text-align: center;
+}
+#image{
+    max-width: 80%;
+    max-height: 20%;
+    object-fit: cover;
+
+}
+#container{
+    grid-area: photo;
+}
+/* Image's styles(Mainly its size) */
+img{
+    max-width: 100%;
+    max-height: 50%;
+}
+/* Body's styles */
+body{
+    background-color: black;
+    color: white;
+    font-family: 'crimsontext', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+}
+/* The container that the button lies in style's */
+#button-container {
+    grid-area: button;
+    position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  
+}
+/* Button's styles */
+button{
+    background-color:blue; 
+    margin-top: 0px;
+    width: 100px;
+    height: 70px;
+    border: none;
+    color: black;
+    background-color: (255, 0 , 68);
+    border-radius: 2px;
+    box-shadow: 0 0 0 0 blue;
+    transition: ease-out .3s;
+    outline: none;
+
+
+}
+button:hover{
+    background-color: blue;
+    box-shadow: 50px 0 0 0 rgb(8, 8, 136);
+
+}
+button:active{
+    background-color: lightblue;
+    box-shadow: 50px 0 0 0 blue;
+}
+/* Random Text container */
+#random-text{
+    position: relative;
+    margin-left: 30%;
+    max-width: 50%;
+    color: white;
+    text-align: center;
+}
+
+
+

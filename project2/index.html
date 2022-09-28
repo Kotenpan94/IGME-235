@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>Amiibo Finder - Gabe Goldsteen</title>
+</head>
+
+<body>
+
+    <div class="explain">
+        <p>
+
+        </p>
+    </div>
+    <!-- Creating buttons area, using one class to keep the styles consistent later on -->
+    <div id="container">
+        <!-- Header -->
+        <header>
+            <h1> Amiibo Finder </h1>
+        </header>
+        <div id="doc">
+            <a href="doc.html" target="_blank">Documentation</a>
+        </div>
+
+        <div class="search">
+            <!-- Search bar for type of amiibo, ideally this will be a site that people would come to with an idea about an amiibo already -->
+            <div class="widgets">
+                <!-- Decided to keep the starting value blank as it can mess with the search if the user doesn't notice it(tested it on roommates) -->
+                <b>Enter in the character that you are looking for:</b> <input id="searchterm" type="text" size="20"
+                    maxlength="20" autofocus value="" />
+            </div>
+            <div id="dropdown">
+                <select id="amiiboSeriesSelect">
+                    Choose the Amiibo's series
+                    <div class="widgets" id="amiiboSeriesOptions">
+
+
+                    </div>
+                </select>
+                <select id="seriesSelect">
+                    <div class="widgets">
+
+
+                    </div>
+
+
+                </select>
+            </div>
+            <div id="search-layout">
+
+                <div class="widgets">
+                    <button type="button" id="search" class="green">Amiibo Searching Time!</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="recentSearch">
+            <div class="widgets">
+                <button type="button" id="prevSearch" class="purple">Get Recent Search!</button>
+            </div>
+            <div id="status"><b>Hit the Search Button to begin looking for Amiibos!</b></div>
+
+        </div>
+    </div>
+    <div id="search-results">
+
+
+
+    </div>
+
+</body>
+
+</html>

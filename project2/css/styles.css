@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'notosansjp';
+    src: url(../fonts/NotoSansJP-Black.otf);
+
+}
+/* Body font rules and styles */
+body{
+    background-color: #0072BB;
+    font-family: 'notosansjp', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    color: black;
+}
+body{
+    background-image: url("../media/amii.jpg");
+    background-color: #cccccc;
+
+}
+/* Button's styles */
+button{
+    background-color: #E18335;
+}
+/* Container that has all of the search related feautures and text */
+#container{
+    margin: auto;
+    width: 50%;
+    border: solid 4px black;
+    background-color: gray;
+}
+#search-results{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit,minmax(200px,400px));
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));;
+    gap: 10px;
+}
+/* Handles the result class created in the javascript code and handles its and its child's styles  */
+.result{
+    display: block;
+    border: solid 2px black;
+
+    flex-direction: column;
+}
+.result img{
+    width: 100%;
+    box-shadow: 0 6px 5px 0;
+}
+.result span{
+    order: -1;
+}
+
+.widgets{
+    padding: 10px;
+}
+#dropdown{
+    margin-left: 10px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+#doc{
+    display: flex;
+    justify-content: center;
+}
