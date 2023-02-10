@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Apps-4-HW</title>
+    <style>
+        body {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Favorites</h1>
+    <h2>My Favorite Colors</h2>
+
+    <ol id="colorsList">
+
+    </ol>
+
+    <h2>My Favorite Foods</h2>
+
+    <ol id="foodsList">
+
+    </ol>
+
+    <h2>My Favorite Links</h2>
+
+    <ol id="linksList">
+
+    </ol>
+
+    <script>
+        "use strict";
+        let colors = ["red", "green", "blue", "purple", "pink"];
+        let foods = ["apple", "potatoes", "bananas", "noodles"]; // add some foods
+        //For loop for colors
+        //First I want to create a container for the list items to go into
+        let container = document.createElement('div');
+        //Creating elements for each list element so that they can be repeated later on in the for loop
+        let element = document.createElement('ul');
+        //Creates a element to select specifically for the ol
+        let elementSelect = document.querySelector("ol");
+        // let elementSelectTest = document.querySelector("#colorslist")
+        //Appending above elements
+        // document.getElementsByTagName('body')[0].appendChild(container);
+        container.appendChild(element)
+        //For loop
+        for (let i = 0; i < colors.length; i++) {
+            //Creating the item for the list
+            let item = document.createElement('li');
+
+            //Setting the inner html of the item to the color array's index
+            item.innerHTML = colors[i];
+
+            //Appending the element
+            elementSelect.appendChild(item);
+        }
+        //For of loop
+        let elementFoodSelect = document.querySelector("ol:nth-of-type(2)");
+
+        // document.getElementsByTagName('body')[1].appendChild(container);
+        container.appendChild(element)
+
+
+        for (let i of foods) {
+            //Creating the item for the list
+            let item = document.createElement('li');
+
+            //Setting the inner html of the item to the color array's index
+            item.innerHTML = foods[i];
+
+            //Appending the element
+            elementFoodSelect.appendChild(item);
+        }
+
+
+
+
+
+        // Optional - can you figure out how to pull both the key AND the value
+        // from the `links` object literal?
+        let links = {
+            "RIT": "http://www.rit.edu",
+            "RWAG": "https://www.facebook.com/RWAGclub",
+            "New Media Club": "http://newmediaclub.cias.rit.edu"
+        }
+
+    </script>
+</body>
+
+</html>

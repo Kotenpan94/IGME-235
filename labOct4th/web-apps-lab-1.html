@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hello-4</title>
+    <script>
+        "use strict";
+        // 1) Common JS Objects
+        let colors = ["red", "green", "blue"]; // Array literal
+        let person = { name: "Fred", age: 20 , school: "RIT" };   // Object literal
+        let month = new Date().getMonth();
+        let age = Math.round(20.999);
+        let age2 = Math.floor(20.999);
+
+        // add your new code here.
+        colors.push("purple");
+        //Instead of hardcoding to print out the last element, going to go about it in a diff way
+        let lastElement = colors[colors.length - 1];
+        console.log(lastElement);
+        //Printing out each element using for loop
+        for (let i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+        }
+        console.log(person.school);
+        console.log(Date.now());
+        console.log(Math.PI);
+        console.log(Math.abs(-999));
+        console.log("Hello".toLocaleUpperCase());
+       
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
