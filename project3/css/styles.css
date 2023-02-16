@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Loading in the font(s) */
+@font-face {
+    font-family: 'nunitosans';
+    src: url(../fonts/NunitoSans-Regular.ttf);
+
+}
+/* Css for the body */
+body{
+    background-color: green;
+    font-family: 'nunitosans', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    color: black;
+}
+/* Horizontal rule to add some flare to the page */
+hr{
+    height: 5px;
+    background: hotpink;
+}
+/* Organizing content with a flex */
+#mockup{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    max-width: 45%;
+    height: 50%;
+}
+/* Centering the canvas on the screen */
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pixi-layout{
+    margin: 0 0;
+    background-color: hotpink;
+    height: 2rem;
+    display: flex;
+    align-content: center;
+
+}
+#doc{
+    margin: 0 1rem;
+}
+#info{
+    margin: 0 0;
+    background-color: hotpink;
+    height: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+p{
+    color: hotpink;
+}
+/* Links - I am actually content with the missing two colors and their defaults */
+a:link{
+    color:indigo
+}
+a:hover{
+    color: rgb(231, 231, 31)
+}
+a:active {
+    color: rgb(8, 8, 184);
+}
+
+    
